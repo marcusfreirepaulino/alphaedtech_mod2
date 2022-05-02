@@ -4,6 +4,21 @@
         <meta charset="utf-8">
         <title>The Drolatic Dreams of Pantagruel</title>
         <link rel="icon" href="pantagruel_title.jpg"/>
+        <style>
+            body {
+                background-image: url('background.jpg');
+            }
+            .last-article {
+                width: 100%;
+                display:flex;
+                gap:20px;
+            }
+            #imagem {
+                width:193px;
+                height:254;
+
+            }
+            </style>
     </head>
 <body>
     <h1 style="color: darkred; font-family:Seagram tfb ;">The Demon Doodles of 1565</h1>
@@ -41,14 +56,16 @@
     </p>
     </div>
     <hr/>
-    <img src="monster3.jpg" alt="Monster that seems to be wearing clergy clothing" height="20%" width="20%"/>
+    
 
 <!--Table with the sources-->
-<div style="position:relative; left:25%; top: 50%;">
+<article class="last-article">
+    <section>
+    <img id="imagem" src="monster3.jpg" alt="Monster that seems to be wearing clergy clothing" />
+    </section>
+    <section>
     <h3 style="color:darkred; font-family: Seagram tfb;">All the sources and drawings are of public domain<br/>and can be found in the following links</h3>
-<table >
-<tr>
-    <th> </th>
+<table border="1" >
 </tr>
 <tr>
     <td><a href="https://publicdomainreview.org/collection/the-drolatic-dreams-of-pantagruel-1565">1</a></td>
@@ -75,20 +92,10 @@
 
 
 </table>
-    </div>
+</section>
+</article>
     
  
 
 </body>
-<style>
-    body {
-        background-image: url('background.jpg');
-    }
-    </style>
-    
-
-
-
-
-
 </html>
