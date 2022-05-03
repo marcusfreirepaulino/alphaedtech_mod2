@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+    <link rel="icon" href="logo_forms.png" />
+    <style>
+       #corpo-form{
+            display: flex;
+            gap:50px;
+        }
+        input[type="checkbox"] {
+            vertical-align: middle;
+            position:relative;
+            bottom: 1px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Formulário</legend>
+            <div id="corpo-form">
+                <section id="primeiro-terço">
+                    <p>
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome"/ size="30"> </p> <br/> 
+                <p> <label for="data-de-nascimento">Data de nascimento:</label>
+                <input type="date" id="data-de-nascimento" value="Insira sua data de nascimento" /> 
+                    </p> <br/>
+                Gênero:<br/>
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="masculino" name="escolha" /> <br/>
+                <label for="feminino">Feminino</label>
+                <input type="radio" id="feminino" name="escolha" /> <br/>
+                <label for="outro">Outro</label>
+                <input type="radio" id="outro" name="escolha" /> <br/>
+                </section>
+            <section id="segundo-terço">
+                <p>
+                 <label for="e-mail">E-mail:</label>
+                 <input type="email" id="e-mail" size="30">
+                </p> <br/>
+                <p>
+                 Tenho experiência nas seguintes linguagens: <br/>
+                    <label for="html/css">
+                        <input type="checkbox" id="html/css" name="escolha" />
+                        HTML/CSS
+                    </label><br/>
+                    <label for="javascript"> 
+                        <input type="checkbox" id="javascript" name="escolha" />
+                        Javascript
+                    </label><br/>
+                    <label for="phyton"> 
+                        <input type="checkbox" id="phyton" name="escolha" />
+                        Phyton
+                    </label> <br/>
+                    <label for="rust">
+                        <input type="checkbox" id="rust" name="escolha" />
+                        Rust
+                    </label> <br/>
+                    <label for="r">
+                        <input type="checkbox" id="r" name="escolha" />
+                        R
+                    </label> <br/>
+                    <label for="java">
+                        <input type="checkbox" id="java" name="escolha" />
+                        Java
+                    </label> <br/>
+
+                </p>
+
+
+
+            </section>
+            <section id="terceiro-teço">
+                <p>
+                    <label for="senha">
+                        Senha:
+                    </label> <br/>
+                    <input type="password" id="senha" maxlength="20"/>
+                </p>
+                <p>
+                    <label for="confirme-senha">
+                        Confirmar senha:
+                    </label> <br />
+                    <input type="password" id="confirme-senha" maxlength="20"/>
+                </p>
+
+            </section>
+        </div>
+        <input type="submit" value="Enviar" />
+        </fieldset>
+    </form>
+</body>
+</html>
