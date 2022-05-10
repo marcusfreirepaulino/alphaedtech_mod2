@@ -1,0 +1,23 @@
+<html>
+    <head>canvas</head>
+<body>
+
+<p>Imagem</p>
+<img id="bob" width="220" height="277" src="../svg/bob.svg" alt="Bob">
+
+<p>Canvas:</p>
+<canvas id="myCanvas" width="300" height="300" style="border:1px solid #e30404;">
+Seu navegador não suporta o elemento canvas :(
+</canvas>
+
+<script>
+window.onload = function() {
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  var img = document.getElementById("bob");
+  ctx.drawImage(img, 10, 10);
+}
+</script>
+
+</body>
+</html>
